@@ -73,6 +73,8 @@ module Gf
       @diff_body = fetch_url(@diff_url)
     end
 
+    private
+
     def fetch_url(url)
       response = Net::HTTP.get_response(URI.parse(url))
 
