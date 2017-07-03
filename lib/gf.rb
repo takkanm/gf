@@ -146,11 +146,12 @@ module Gf
   end
 
   class Command < Thor
-    desc 'show changed files from open pull requests.', 'show changed files from open pull requests.'
-    def show_files(owner_slash_repo, *files)
+    desc 'show_files owner_slash_repo', 'show changed files from open pull requests.'
+    option :repo, required: true, desc: '"owner/repository"'
+    def show_files(*files)
       NetrcFile.new.validate!
 
-      repo = Repositry.new(owner_slash_repo)
+      repo = Repositry.new(options[:repo])
       repo.collect_pull_requested_files.each do |_, pull|
         puts pull.report
       end
