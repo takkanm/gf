@@ -146,7 +146,7 @@ module Gf
   end
 
   class Command < Thor
-    desc 'hi', 'hi'
+    desc 'show changed files from open pull requests.', 'show changed files from open pull requests.'
     def show_files(owner_slash_repo, *files)
       NetrcFile.new.validate!
 
