@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["takkanm"]
   spec.email         = ["takkanm@gmail.com"]
 
-  spec.summary       = %q{}
-  spec.description   = %q{}
-  spec.homepage      = ""
+  spec.summary       = %q{show changed files from open pull requests}
+  spec.description   = %q{show changed files from open pull requests}
+  spec.homepage      = "https://github.com/takkanm/gf"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
