@@ -21,6 +21,9 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+```
+$ gf --repo 'takkanm/gf'
+```
 
 ## Development
 
